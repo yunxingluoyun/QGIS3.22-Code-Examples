@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>qgis_dev</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuFiles">
+    <property name="title">
+     <string>Files</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuVector">
+    <property name="title">
+     <string>Vector</string>
+    </property>
+    <addaction name="actionAdd_Vector"/>
+   </widget>
+   <widget class="QMenu" name="menuRaster">
+    <property name="title">
+     <string>Raster</string>
+    </property>
+    <addaction name="actionAdd_Raster"/>
+   </widget>
+   <addaction name="menuFiles"/>
+   <addaction name="menuVector"/>
+   <addaction name="menuRaster"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_Vector">
+   <property name="text">
+    <string>Add Vector </string>
+   </property>
+  </action>
+  <action name="actionAdd_Raster">
+   <property name="text">
+    <string>Add Raster</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
